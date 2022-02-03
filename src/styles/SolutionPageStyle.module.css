@@ -1,0 +1,115 @@
+.solutionPageTopmost {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/images/ceoSecImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.solutionPageTopmostOverlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.solutionPageTopmostOverlay *:first-child {
+  margin-top: 0;
+}
+
+.solutionPageTopmostOverlay h1 {
+  font-size: 3em;
+}
+
+/****************** 
+  Etraffika section
+*******************/
+.solutionPageEtraffika {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.solutionPageEtraffika > div > h1,
+.solutions > div > h1 {
+  font-size: 2em;
+}
+
+.solutionPageEtraffikaTextCan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.solutionPageEtraffikaText {
+  width: 70%;
+}
+
+.solutionPageEtraffikaText p,
+.solutions > div > p {
+  font-size: 1.2em;
+  line-height: 1.7;
+}
+
+.solutionPageEtraffikaText p:first-child {
+  margin-top: 0;
+}
+
+.solutionPageEtraffikaImage {
+  width: 25%;
+}
+
+.solutionPageEtraffikaImage img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/****************** 
+  solutions section
+*******************/
+.solutionsTextWrapper {
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  .solutionPageTopmost,
+  .solutionPageTopmostOverlay {
+    height: 70vh !important;
+  }
+
+  .solutionPageTopmostOverlay {
+    padding: 50px;
+}
+}
+
+@media (max-width: 500px) {
+  .solutionPageEtraffikaTextCan {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .solutionPageEtraffikaText {
+    width: 100%;
+  }
+  .solutionPageEtraffikaImage {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px){
+
+    .solutionPageTopmostOverlay h1 {
+    font-size: 2em;
+  }
+
+  .solutionPageTopmostOverlay p {
+      font-size: 1em;
+    }
+}

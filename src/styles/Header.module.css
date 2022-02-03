@@ -1,0 +1,98 @@
+:root {
+    --blue: skyblue;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
+  .headerPage{
+    width: 100%;
+    padding: 10px 30px ;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 2px solid skyblue;
+    box-sizing: border-box;
+  }
+
+nav, .topContactSection, .topContactSection div, .topContactSection .contactOptionWrapper a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  color: var(--black);
+}
+
+.topContactSection div a:hover{
+    color: rgb(6, 147, 202);
+}
+
+.topContactSection .contactOptionIcon{
+    margin-left: 10px;
+}
+
+.topContactSection .contactOption, .contactOptionWrapper{
+    margin-right: 20px;
+}
+
+.contactOptionWrapper a{
+    text-decoration: none;
+}
+
+.topContactSection .contactOption:last-child{
+    margin-right: 0;
+}
+
+.logoWrapper {
+  flex: 1;
+}
+
+.logo {
+  width: 30%;
+  object-fit: contain;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+.navMenuLink {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navMenuLink:hover, .navMenuLink:focus{
+    color: var(--blue);
+}
+
+.navMenuLink:focus{
+    font-weight: bold;
+    font-size: .9em;
+}
+
+@media (max-width: 1030px){
+    .navMenu{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 900px) {
+  .contactOptionWrapper a{
+      display: none !important;
+  }
+
+  .topContactSection{
+      display: none;
+  }
+
+  .logo{
+      width: 10em;
+      object-fit: contain;
+  }
+}
+
+@media (min-width: 1030px){
+  .headerPage{
+    /* background-color: yellowgreen; */
+  }
+}

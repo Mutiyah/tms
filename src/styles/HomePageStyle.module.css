@@ -1,0 +1,330 @@
+/***************** 
+ carousel section 
+*****************/
+.carouselWrapper {
+  background-image: url("/public/images/trafficLight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.carouselWrapperOverlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box !important;
+  padding: 60px;
+}
+
+.carouselWrapperOverlaySubHead{
+  color: skyblue;
+}
+
+.carouselWrapperOverlay h1 {
+  font-size: 5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: yellow;
+}
+.carouselWrapperOverlay p {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.carouselWrapperOverlay .carouselBtn,
+.homeAboutUsBtn {
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 12px 24px !important;
+  font-weight: bold;
+  border: 1px solid #000 !important;
+  outline: none !important;
+}
+
+.carouselWrapperOverlay .carouselBtn:hover,
+.homeAboutUsBtn:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  outline: none !important;
+}
+
+/*********************
+Home about us section 
+**********************/
+.homeAboutUs {
+  height: fit-content;
+  display: flex;
+  padding: 30px;
+}
+
+.homeAboutUsTextTop {
+  display: none;
+}
+
+.homeAboutUsTextTop,
+.homeAboutUsText {
+  order: 1;
+}
+.aboutImage {
+  order: 2;
+}
+
+.homeAboutUsText,
+.aboutImage {
+  flex: 1;
+}
+.homeAboutUsText {
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.homeAboutUsTextTop h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.homeAboutUsText1 {
+  margin-top: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.homeAboutUsText2 {
+  font-size: 1.2em;
+}
+
+/********************* 
+  Home solution section 
+  *********************/
+.HomePageSolutionCan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeSolutionSection {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.solutionheader {
+  font-weight: bolder !important;
+  height: 75px !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.1em !important;
+  justify-content: center;
+}
+
+.solutionCard {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.solutionBody {
+  line-height: 1.5 !important;
+  font-size: 1em !important;
+}
+
+.cardImage {
+  height: 200px;
+}
+
+/***************** 
+  Home CEO section 
+  *****************/
+.ceoSection {
+  width: 100vw;
+  height: auto;
+  color: #fff;
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceoSectionImgCan {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.ceoSectionImgCan h5,
+.homeLetsTalk div:first-child h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.ceoSectionImgCan p {
+  font-weight: bolder;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.ceoSectionImgCan cite {
+  color: yellow;
+}
+
+/***************** 
+  Home let's talk section 
+  *****************/
+.homeLetsTalk {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.homeLetsTalk div:first-child {
+  width: 70%;
+}
+
+.homeLetsTalk div:first-child h1 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.homeLetsTalk div:last-child {
+  width: fit-content;
+}
+
+.homeLetsTalk div:last-child p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 1000px) {
+  /***************** 
+     carousel section 
+    *****************/
+    .carouselWrapper, .carouselWrapperOverlay {
+      height: 70vh !important;
+    }
+      
+  .carouselWrapperOverlay {
+    padding: 40px;
+  }
+  .carouselWrapperOverlay h1 {
+    font-size: 3em;
+    flex-wrap: wrap;
+  }
+
+  .carouselWrapperOverlay p {
+    flex-wrap: wrap;
+    font-size: 1.1em;
+  }
+
+  /*********************
+    Home about us section 
+  **********************/
+
+  .homeAboutUs {
+    flex-direction: column;
+  }
+
+  .homeAboutUsTextTop {
+    order: 1;
+    margin-bottom: 0;
+  }
+  .aboutImage img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .aboutImage {
+    order: 2;
+    height: fit-content !important;
+  }
+  .homeAboutUsText {
+    order: 3;
+  }
+
+  .homeAboutUsTextTop2 {
+    display: none;
+  }
+
+  .homeAboutUsTextTop {
+    display: block;
+  }
+
+  .homeAboutUsText {
+    padding-right: 0px;
+  }
+
+  /********************* 
+  Home solution section 
+  *********************/
+  .homeSolutionSection {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+  }
+
+  .solutionCard {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  /***************** 
+  Home let's talk section 
+  *****************/
+  .homeLetsTalk {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .homeLetsTalk div:first-child,
+  .homeLetsTalk div:last-child {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .homeLetsTalk div:last-child {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  /*********************
+  Home CEO section 
+  **********************/
+  .ceoSectionImgCan {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px){
+  .carouselWrapperOverlay h1 {
+    font-size: 2em;
+  }
+
+  .carouselWrapperOverlay p {
+      font-size: 1em;
+    }
+}
